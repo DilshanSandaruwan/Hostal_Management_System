@@ -5,8 +5,9 @@
 
 package lk.ijse.dao.custom;
 
-import lk.ijse.hms.dao.SuperDAO;
-import lk.ijse.hms.entity.CustomEntity;
+
+import lk.ijse.dao.SuperDAO;
+import lk.ijse.entity.CustomEntity;
 
 import java.util.ArrayList;
 

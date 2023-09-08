@@ -5,9 +5,9 @@
 
 package lk.ijse.bo.custom.impl;
 
-import lk.ijse.hms.bo.custom.UserBO;
-import lk.ijse.hms.dao.FactoryDAO;
-import lk.ijse.hms.dao.custom.UserDAO;
+import lk.ijse.bo.custom.UserBO;
+import lk.ijse.dao.FactoryDAO;
+import lk.ijse.dao.custom.UserDAO;
 
 public class UserBOImpl implements UserBO {
     UserDAO userDAO = (UserDAO) FactoryDAO.getFactoryDAO().getDAO(FactoryDAO.Types.USER);

@@ -5,8 +5,9 @@
 
 package lk.ijse.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
-import lk.ijse.hms.dto.StudentDTO;
+
+import lk.ijse.bo.SuperBO;
+import lk.ijse.dto.StudentDTO;
 
 import java.util.ArrayList;
 

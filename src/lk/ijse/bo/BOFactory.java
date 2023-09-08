@@ -1,5 +1,10 @@
 package lk.ijse.bo;
 
+import lk.ijse.bo.custom.impl.ReservationBOImpl;
+import lk.ijse.bo.custom.impl.RoomsBOImpl;
+import lk.ijse.bo.custom.impl.StudentBOImpl;
+import lk.ijse.bo.custom.impl.UserBOImpl;
+
 public class BOFactory {
     private static BOFactory boFactory;
 
@@ -20,13 +25,13 @@ public class BOFactory {
     public SuperBO getBO(Type type) {
         switch (type) {
             case STUDENT:
-                return new StudentBOImpl();
+                return (SuperBO) new StudentBOImpl();
             case ROOM:
                 return new RoomsBOImpl();
             case RECEPTION:
-                return new ReservationBOImpl();
+                return (SuperBO) new ReservationBOImpl();
             case USER:
-                return new UserBOImpl();
+                return (SuperBO) new UserBOImpl();
             default:
                 return null;
         }

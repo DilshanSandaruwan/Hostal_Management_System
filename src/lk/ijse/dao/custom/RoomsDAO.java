@@ -5,8 +5,9 @@
 
 package lk.ijse.dao.custom;
 
-import lk.ijse.hms.dao.CrudDAO;
-import lk.ijse.hms.entity.Room;
+
+import lk.ijse.dao.CrudDAO;
+import lk.ijse.entity.Room;
 
 public interface RoomsDAO extends CrudDAO<Room> {
 }

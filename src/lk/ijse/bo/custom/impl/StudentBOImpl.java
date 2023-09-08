@@ -5,11 +5,13 @@
 
 package lk.ijse.bo.custom.impl;
 
-import lk.ijse.hms.bo.custom.StudentBO;
-import lk.ijse.hms.dao.FactoryDAO;
-import lk.ijse.hms.dao.custom.StudentDAO;
-import lk.ijse.hms.dto.StudentDTO;
-import lk.ijse.hms.entity.Student;
+
+
+import lk.ijse.bo.custom.StudentBO;
+import lk.ijse.dao.FactoryDAO;
+import lk.ijse.dao.custom.StudentDAO;
+import lk.ijse.dto.StudentDTO;
+import lk.ijse.entity.Student;
 
 import java.util.ArrayList;
 

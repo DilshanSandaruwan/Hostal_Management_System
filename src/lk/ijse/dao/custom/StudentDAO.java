@@ -5,8 +5,9 @@
 
 package lk.ijse.dao.custom;
 
-import lk.ijse.hms.dao.CrudDAO;
-import lk.ijse.hms.entity.Student;
+
+import lk.ijse.dao.CrudDAO;
+import lk.ijse.entity.Student;
 
 public interface StudentDAO extends CrudDAO<Student> {
 }

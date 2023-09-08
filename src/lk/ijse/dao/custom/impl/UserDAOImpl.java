@@ -5,9 +5,10 @@
 
 package lk.ijse.dao.custom.impl;
 
-import lk.ijse.hms.dao.custom.UserDAO;
-import lk.ijse.hms.entity.User;
-import lk.ijse.hms.util.SessionFactoryConfig;
+
+import lk.ijse.dao.custom.UserDAO;
+import lk.ijse.entity.User;
+import lk.ijse.util.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

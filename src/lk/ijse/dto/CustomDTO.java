@@ -5,9 +5,9 @@
 
 package lk.ijse.dto;
 
-import lk.ijse.hms.entity.Reservation;
-import lk.ijse.hms.entity.Room;
-import lk.ijse.hms.entity.Student;
+import lk.ijse.entity.Reservation;
+import lk.ijse.entity.Room;
+import lk.ijse.entity.Student;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

@@ -5,8 +5,8 @@
 
 package lk.ijse.dao.custom;
 
-import lk.ijse.hms.dao.CrudDAO;
-import lk.ijse.hms.entity.User;
+import lk.ijse.dao.CrudDAO;
+import lk.ijse.entity.User;
 
 public interface UserDAO extends CrudDAO<User> {
     String getUser(String id);

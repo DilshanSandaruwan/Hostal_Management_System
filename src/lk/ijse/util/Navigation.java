@@ -11,10 +11,10 @@ import java.io.IOException;
 public class Navigation {
     private static AnchorPane pane;
 
-    public static void navigate(lk.ijse.hms.util.Routes route, AnchorPane pane) throws IOException {
-        lk.ijse.hms.util.Navigation.pane = pane;
-        lk.ijse.hms.util.Navigation.pane.getChildren().clear();
-        Stage window = (Stage) lk.ijse.hms.util.Navigation.pane.getScene().getWindow();
+    public static void navigate(Routes route, AnchorPane pane) throws IOException {
+        Navigation.pane = pane;
+        Navigation.pane.getChildren().clear();
+        Stage window = (Stage) Navigation.pane.getScene().getWindow();
 
         switch (route) {
             case LOGIN:
@@ -46,8 +46,8 @@ public class Navigation {
         }
     }
     public static void initUI(String location) throws IOException {
-        lk.ijse.hms.util.Navigation.pane.getChildren()
-                .add(FXMLLoader.load(lk.ijse.hms.util.Navigation.class.getResource("/resources/view/" + location)));
+        Navigation.pane.getChildren()
+                .add(FXMLLoader.load(Navigation.class.getResource("/resources/view/" + location)));
         new FadeIn(pane).setSpeed(3).play();
     }
 }

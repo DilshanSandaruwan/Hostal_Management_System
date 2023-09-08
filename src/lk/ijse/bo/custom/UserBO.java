@@ -5,7 +5,8 @@
 
 package lk.ijse.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
+
+import lk.ijse.bo.SuperBO;
 
 public interface UserBO extends SuperBO {
     String getUser(String id);

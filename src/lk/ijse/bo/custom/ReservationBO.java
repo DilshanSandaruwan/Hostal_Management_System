@@ -5,11 +5,11 @@
 
 package lk.ijse.bo.custom;
 
-import lk.ijse.hms.bo.SuperBO;
-import lk.ijse.hms.dto.CustomDTO;
-import lk.ijse.hms.dto.ReservationDTO;
-import lk.ijse.hms.dto.RoomsDTO;
-import lk.ijse.hms.dto.StudentDTO;
+import lk.ijse.bo.SuperBO;
+import lk.ijse.dto.CustomDTO;
+import lk.ijse.dto.ReservationDTO;
+import lk.ijse.dto.RoomsDTO;
+import lk.ijse.dto.StudentDTO;
 
 import java.util.ArrayList;
 
@@ -27,4 +27,5 @@ public interface ReservationBO extends SuperBO {
     boolean deleteReservation(ReservationDTO reservationDTO);
 
     boolean updateReservation(ReservationDTO reservationDTO);
+
 }

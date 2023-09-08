@@ -1,15 +1,16 @@
 package lk.ijse.dao;
 
-import lk.ijse.hms.dao.custom.impl.*;
+
+import lk.ijse.dao.custom.impl.*;
 
 public class FactoryDAO {
-    private static lk.ijse.hms.dao.FactoryDAO factoryDAO;
+    private static FactoryDAO factoryDAO;
 
     private FactoryDAO() {
     }
 
-    public static lk.ijse.hms.dao.FactoryDAO getFactoryDAO() {
-        return factoryDAO == null ? factoryDAO = new lk.ijse.hms.dao.FactoryDAO() : factoryDAO;
+    public static FactoryDAO getFactoryDAO() {
+        return factoryDAO == null ? factoryDAO = new FactoryDAO() : factoryDAO;
     }
 
     public enum Types {
@@ -26,15 +27,15 @@ public class FactoryDAO {
     public SuperDAO getDAO(Types types) {
         switch (types) {
             case STUDENT:
-                return new StudentDAOImpl();
+                return (SuperDAO) new StudentDAOImpl();
             case ROOM:
-                return new RoomsDAOImpl();
+                return (SuperDAO) new RoomsDAOImpl();
             case RECEPTION:
-                return new ReservationDAOImpl();
+                return (SuperDAO) new ReservationDAOImpl();
             case JOIN_QUERY:
                 return new QueryDAOImpl();
             case USER:
-                return new UserDAOImpl();
+                return (SuperDAO) new UserDAOImpl();
             default:
                 return null;
         }

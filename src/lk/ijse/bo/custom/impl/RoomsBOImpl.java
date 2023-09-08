@@ -5,11 +5,11 @@
 
 package lk.ijse.bo.custom.impl;
 
-import lk.ijse.hms.bo.custom.RoomsBO;
-import lk.ijse.hms.dao.FactoryDAO;
-import lk.ijse.hms.dao.custom.RoomsDAO;
-import lk.ijse.hms.dto.RoomsDTO;
-import lk.ijse.hms.entity.Room;
+import lk.ijse.bo.custom.RoomsBO;
+import lk.ijse.dao.FactoryDAO;
+import lk.ijse.dao.custom.RoomsDAO;
+import lk.ijse.dto.RoomsDTO;
+import lk.ijse.entity.Room;
 
 import java.util.ArrayList;
 

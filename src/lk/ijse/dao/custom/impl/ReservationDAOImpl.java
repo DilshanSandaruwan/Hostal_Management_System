@@ -5,11 +5,12 @@
 
 package lk.ijse.dao.custom.impl;
 
-import lk.ijse.hms.dao.custom.ReservationDAO;
-import lk.ijse.hms.entity.Reservation;
-import lk.ijse.hms.entity.Room;
-import lk.ijse.hms.entity.Student;
-import lk.ijse.hms.util.SessionFactoryConfig;
+
+import lk.ijse.dao.custom.ReservationDAO;
+import lk.ijse.entity.Reservation;
+import lk.ijse.entity.Room;
+import lk.ijse.entity.Student;
+import lk.ijse.util.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;

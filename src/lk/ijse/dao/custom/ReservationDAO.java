@@ -5,8 +5,8 @@
 
 package lk.ijse.dao.custom;
 
-import lk.ijse.hms.dao.CrudDAO;
-import lk.ijse.hms.entity.Reservation;
+import lk.ijse.dao.CrudDAO;
+import lk.ijse.entity.Reservation;
 
 public interface ReservationDAO extends CrudDAO<Reservation> {
 }

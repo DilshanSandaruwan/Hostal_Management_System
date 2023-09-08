@@ -5,9 +5,9 @@
 
 package lk.ijse.dao.custom.impl;
 
-import lk.ijse.hms.dao.custom.StudentDAO;
-import lk.ijse.hms.entity.Student;
-import lk.ijse.hms.util.SessionFactoryConfig;
+import lk.ijse.dao.custom.StudentDAO;
+import lk.ijse.entity.Student;
+import lk.ijse.util.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class StudentDAOImpl implements StudentDAO{
+public class StudentDAOImpl implements StudentDAO {
     public boolean add(Student student) {
         Session session = SessionFactoryConfig.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
