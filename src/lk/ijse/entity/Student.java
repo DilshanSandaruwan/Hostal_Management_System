@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 @Entity
 public class Student {
     @Id
@@ -74,11 +75,11 @@ public class Student {
         this.gender = gender;
     }
 
-    public List<lk.ijse.hms.entity.Reservation> getReservationList() {
+    public List<Reservation> getReservationList() {
         return reservationList;
     }
 
-    public void setReservationList(List<lk.ijse.hms.entity.Reservation> reservationList) {
+    public void setReservationList(List<Reservation> reservationList) {
         this.reservationList = reservationList;
     }
 
@@ -90,8 +91,8 @@ public class Student {
     private String dob;
     private String gender;
 
-    @OneToMany(mappedBy = "student" ,cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<lk.ijse.hms.entity.Reservation> reservationList = new ArrayList<>();
+    @OneToMany (mappedBy = "student" ,cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Reservation> reservationList = new ArrayList<>();
 
     public Student(String id, String name, String address, String contact_no, String dob, String gender) {
         this.id = id;
@@ -101,4 +102,5 @@ public class Student {
         this.dob = dob;
         this.gender = gender;
     }
+
 }

@@ -53,11 +53,11 @@ public class Room {
         this.qty = qty;
     }
 
-    public List<lk.ijse.hms.entity.Reservation> getReservationList() {
+    public List<Reservation> getReservationList() {
         return reservationList;
     }
 
-    public void setReservationList(List<lk.ijse.hms.entity.Reservation> reservationList) {
+    public void setReservationList(List<Reservation> reservationList) {
         this.reservationList = reservationList;
     }
 
@@ -67,8 +67,8 @@ public class Room {
     private String key_money;
     private int qty;
 
-    @OneToMany(mappedBy = "room" ,cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<lk.ijse.hms.entity.Reservation> reservationList = new ArrayList<>();
+    @OneToMany (mappedBy = "room" ,cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Reservation> reservationList = new ArrayList<>();
 
     public Room(String room_type_id, String type, String key_money, int qty) {
         this.room_type_id = room_type_id;

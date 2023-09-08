@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomEntity {
-    // reservation
     private String res_id;
 
     public CustomEntity() {
